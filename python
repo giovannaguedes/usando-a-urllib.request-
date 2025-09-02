@@ -1,0 +1,11 @@
+---#python3
+
+>>> from urllib.request import urlopen
+>>> site = urlopen("http://nome do site aqui.com.br")
+>>> print(site.read()) //ler o header
+>>> print(site- getcode()) //retorna o codigo 200 ou 404...
+>>> print(site geturl())
+>>> print(site.info())
+>>> head = site.info() //informação do cabeçalho do server
+>>> print( head['Server']) I
+>>> exit()
