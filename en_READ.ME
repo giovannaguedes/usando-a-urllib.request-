@@ -1,0 +1,57 @@
+Using urllib.request in Interactive Mode
+
+Interactive code using Python3 and urllib.request.
+
+⚠️ For educational purposes only • Developed by M!ss s3c
+
+📝 Guide: Exploring Websites with urllib.request in Python
+
+1. Open Python Interactive Mode
+
+In the terminal, type:
+
+python3
+
+
+You will see the interactive prompt: >>>.
+
+2. Import the library
+>>> from urllib.request import urlopen
+
+3. Open a website
+>>> site = urlopen("http://example.com")
+
+4. Read the page content
+>>> print(site.read())  # reads the full content
+
+5. Check the HTTP response code
+>>> print(site.getcode())  # returns 200, 404, etc.
+
+6. Get the accessed URL
+>>> print(site.geturl())
+
+7. View HTTP headers
+>>> print(site.info())  # shows all headers
+
+8. Check the web server
+>>> head = site.info()
+>>> print(head['Server'])
+
+9. Exit interactive mode
+>>> exit()
+
+👉 What you learned here
+
+urlopen() → opens a URL and returns a response object.
+
+.read() → reads the HTML content of the page.
+
+.getcode() → returns the HTTP status code (200 → OK, 404 → Not Found, etc.).
+
+.geturl() → returns the final accessed URL (useful for redirects).
+
+.info() → returns the HTTP headers.
+
+Server header → identifies the web server being used.
+
+Python interactive mode is useful for quick tests without creating files.
